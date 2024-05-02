@@ -51,6 +51,11 @@ class MyHomePage extends StatelessWidget {
                   ),
                   title: Text(movie.title),
                   subtitle: Text(movie.releaseDate.toString()),
+                  trailing: IconButton(
+                    icon: Icon(Icons.favorite_border),
+                    onPressed: () {
+                    },
+                  ),
                 );
               },
             );
@@ -63,6 +68,7 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+
 
 
 
